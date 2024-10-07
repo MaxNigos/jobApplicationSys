@@ -13,7 +13,7 @@
                 <!--<a href=" " class="logo img-responsive"> </a>-->
                 <img src="company-logo.png" class="img-responsive" alt="Group of Companies">
             </div>
-            <h1 class ="header"> Job Application </h1>
+            <h1 class ="header"> Job Application Form</h1>
                         <!-- <form action="link?" method="POST"> -->
                 <form action="/apply" id="job-application-form" method="POST">
                     <div class="form-group">

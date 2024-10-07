@@ -1,10 +1,17 @@
+@font-face {
+    font-family: 'Montserrat'; 
+    src: url('../Montserrat font/Montserrat-VariableFont_wght.ttf');
+  }
+
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: 'Montserrat', sans-serif; 
     background-color: #e8dccc;
     margin: 0;
     padding: 0;
     color:#373234;
 }
+
+
 
 /*.text-center{
     text-align: center;
@@ -40,7 +47,8 @@ body {
 label {
     display: block;
     margin-bottom: 8px;
-    font-weight: bold;
+    font-weight:600;
+    font-size: 14px;
 }
 .form-group {
     margin-bottom: 15px;
