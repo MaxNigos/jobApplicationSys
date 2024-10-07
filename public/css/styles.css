@@ -11,12 +11,6 @@ body {
     color:#373234;
 }
 
-
-
-/*.text-center{
-    text-align: center;
-}*/
-
 .company-logo{
     display: flex;
     justify-content: center; 
@@ -27,7 +21,6 @@ body {
     text-align: center;
     
 }
-
 .form-container {
     width: 50%;
     margin: 50px auto;
