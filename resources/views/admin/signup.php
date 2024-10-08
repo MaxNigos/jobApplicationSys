@@ -7,17 +7,17 @@
         <link rel="stylesheet" href="css/admin-styles.css">
     </head>
 
-    <body class = "login_admin">
+    <body class = "signup_admin">
  
         <div class = "form-container">
             <div class="company-logo text-center">
                 <a href=" " class="logo img-responsive"> </a>
                 <img src="company-logo.png" class="img-responsive" alt="Group of Companies">
             </div>
-            <h1 class ="header"> Login </h1>
+            <h1 class ="header"> Sign Up </h1>
 
-            <form action="/admin/login" id="admin-login" method="POST">
-                <div class="form-group">
+            <form action="/admin/signup" id="admin-signup" method="POST">
+                <!--<div class="form-group">
                     <label for ="email" class="control-label">Email Address</label>
                     <input type="email" id="email" name="email" class="control-form" required>
                 </div>
@@ -35,13 +35,13 @@
                     <button type="submit" class="btn submitBtn" id="login"> Login </button>        
                 </div>
                 <div class="form-group">
-                    <button class="btn createAcc" id="login"> Sign Up </button>        
+                    <button class="btn createAcc" id="login" onclick="window.location.href='create-account.php'"> Sign Up </button>        
                 </div>
                 <div class="form-group">
                     <div class="hyperlink">
                         <a href= " link "> Forgot password? </a>
                     </div>  
-                </div>
+                </div>-->
             </form>
         </div>    
     </body>

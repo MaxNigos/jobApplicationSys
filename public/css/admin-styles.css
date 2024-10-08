@@ -96,7 +96,13 @@ input[type="email"], input[type="password"]
     background-color:#af372e;
 }
 
-.btn.createAcc {
+.btn.signUp {
+    width: 100%;
+    padding: 12px;
+    border-radius: 7px;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif; 
+    cursor: pointer;
     background-color: #ffffff;
     color:#d84339;
     border: 2px solid #d84339;
@@ -105,7 +111,6 @@ input[type="email"], input[type="password"]
 .btn.createAcc:hover {
     background-color: #d1bbbb;
 }
-
 
 .hyperlink {
     font-size: 14px;
