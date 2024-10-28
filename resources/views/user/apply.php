@@ -29,6 +29,10 @@
                         <input type="text" id="lname" name="lname" class="control-form" required>
                     </div>
                     <div class="form-group">
+                        <label for ="email" class="control-label">Email</label>
+                        <input type="email" id="email" name="email" class="control-form" required>
+                    </div>
+                    <div class="form-group">
                         <label for ="position" class="control-label">Position applying for</label>
                         <select id="position_applied" name="position_applied" required>
                             <option value="Position1">Position 1</option>
