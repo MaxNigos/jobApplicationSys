@@ -108,7 +108,7 @@ input[type="email"], input[type="password"]
     border: 2px solid #d84339;
 }
 
-.btn.createAcc:hover {
+.btn.signUp:hover {
     background-color: #d1bbbb;
 }
 

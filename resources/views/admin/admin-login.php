@@ -34,9 +34,9 @@
                 <div class="form-group">
                     <button type="submit" class="btn submitBtn" id="login"> Login </button>        
                 </div>
-                <!--<div class="form-group">
-                    <button class="btn createAcc" id="signup"> Sign Up </button>        
-                </div>-->
+                <div class="form-group">
+                    <button class="btn signUp" id="signup"> Sign Up </button>        
+                </div>
                 <!--<div class="form-group">
                     <a href="signup.php" class="btn signUp" id="signup">Sign Up</a>
                 </div>-->
