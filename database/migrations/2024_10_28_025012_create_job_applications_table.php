@@ -13,11 +13,11 @@ return new class extends Migration
     {
         Schema::create('job_applications', function (Blueprint $table) {
             $table->string('fname');
-            $table->string('mname');
+            $table->string('mname')->nullable;
             $table->string('lname');
-            $table->string('email');
+            $table->string('email', 191)->unique();
+            $table->string('position');
             $table->string('resume'); // Path to uploaded resume
-            $table->timestamps();
         });
     }
 

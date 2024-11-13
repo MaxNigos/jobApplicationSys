@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -14,8 +15,9 @@
                 <img src="company-logo.png" class="img-responsive" alt="Group of Companies">
             </div>
             <h1 class ="header"> Job Application Form</h1>
-                        <!-- <form action="link?" method="POST"> -->
-                <form action="/apply" id="job-application-form" method="POST">
+                <form action="{{ route('job-application.submit') }}" id="job-application-form" method="POST" enctype="multipart/form-data">
+                @csrf
+                <!--<form action="/apply" id="job-application-form" method="POST">-->
                     <div class="form-group">
                         <label for ="fname" class="control-label">First Name</label>
                         <input type="text" id="fname" name="fname" class="control-form" required>
