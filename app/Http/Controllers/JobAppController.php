@@ -35,7 +35,7 @@ class JobAppController extends Controller
             'resume' => $resumePath,
         ]);
 
-        return redirect()->route('user/apply')->with('success', 'Application submitted successfully!');
-        //return redirect()->route('job-application.form')->with('success', 'Application submitted successfully!'); 
+        //  return redirect()->route('user/apply')->with('success', 'Application submitted successfully!');
+        return redirect()->route('job-application.form')->with('success', 'Application submitted successfully!'); 
     }   
 }
