@@ -12,11 +12,13 @@ return new class extends Migration
     public function up(): void
     {
         Schema::create('job_applications', function (Blueprint $table) {
+            $table->id();
             $table->string('fname');
-            $table->string('mname')->nullable;
+            $table->string('mname')->nullable();
             $table->string('lname');
             $table->string('email', 191)->unique();
-            $table->string('position');
+            $table->string('position')->default('Select Position');
+            //$table->string('position');
             $table->string('resume'); // Path to uploaded resume
         });
     }

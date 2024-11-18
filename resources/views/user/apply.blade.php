@@ -36,7 +36,8 @@
                     </div>
                     <div class="form-group">
                         <label for ="position" class="control-label">Position applying for</label>
-                        <select id="position_applied" name="position_applied" required>
+                        <select id="position" name="position" required>
+                            <option value="" disabled selected>Select Position</option>
                             <option value="Position1">Position 1</option>
                             <option value="Position2">Position 2</option>
                             <option value="Position3">Position 3</option>

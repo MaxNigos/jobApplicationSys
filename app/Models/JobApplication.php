@@ -8,4 +8,13 @@ use Illuminate\Database\Eloquent\Model;
 class JobApplication extends Model
 {
     use HasFactory;
+    protected $fillable = [
+        'fname',
+        'mname',
+        'lname',
+        'email',
+        'position', //position_applied
+        'resume',
+    ];
+   public $timestamps = false;
 }

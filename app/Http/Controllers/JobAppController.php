@@ -19,22 +19,23 @@ class JobAppController extends Controller
             'fname' => 'required|string|max:255',
             'mname' => 'nullable|string|max:255',
             'lname' => 'required|string|max:255',
-            'position_applied' => 'required|string|max:255 ',
-            'email' => 'required|email|unique:job_applications, email',
+            'email' => 'required|email|unique:job_applications,email',
+            'position' => 'required|string|max:255',
             'resume' => 'required|file|mimes:pdf,doc,docx|max:51200', 
         ]);
+
         $resumePath = $request->file('resume')->store('resumes');
 
         JobApplication::create([
             'fname' => $validatedData['fname'],
             'mname' => $validatedData['mname'] ?? '',
             'lname' => $validatedData['lname'],
-            'position' => $validatedData['position_applied'],
+            'position' => $validatedData['position'],
             'email' => $validatedData['email'],
             'resume' => $resumePath,
         ]);
 
         return redirect()->route('user/apply')->with('success', 'Application submitted successfully!');
-       /* return redirect()->route('job-application.form')->with('success', 'Application submitted successfully!'); */
+        //return redirect()->route('job-application.form')->with('success', 'Application submitted successfully!'); 
     }   
 }

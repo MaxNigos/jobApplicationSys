@@ -8,16 +8,17 @@ use App\Http\Controllers\ApplicantController;
 /*
 Route::get('/', function (){
     return view('user/apply');
-});*/
+});
+*/
 
 //User apply
 Route::get('/', [JobAppController::class, 'showForm'])->name('job-application.form');
 Route::post('/', [JobAppController::class, 'submitForm'])->name('job-application.submit');
 
-/*
+
 Route::get('/admin', function (){
     return view('admin/admin-login');
-});*/
+});
 
 // Admin Login
 Route::get('/admin/login', [AdminController::class, 'showLoginForm'])->name('admin.login');
