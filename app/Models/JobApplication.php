@@ -13,7 +13,7 @@ class JobApplication extends Model
         'mname',
         'lname',
         'email',
-        'position', //position_applied
+        'position', 
         'resume',
     ];
    public $timestamps = false;

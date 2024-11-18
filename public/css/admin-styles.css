@@ -127,3 +127,31 @@ input[type="email"], input[type="password"]
     color: #942e27; /* Change the color on hover */
     text-decoration: underline; /* Optionally underline on hover */
 }
+
+
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.applicants-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.applicants-table th, .applicants-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.applicants-table th {
+    background-color: #f4f4f4;
+}
