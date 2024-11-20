@@ -4,16 +4,31 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1, maximum-scale=1">
         <title>Applicants Dashboard</title>
-        <link rel="stylesheet" href="css/admin-styles.css">
+       <!-- <link rel="stylesheet" href="css/admin-styles.css"> -->
+       <link rel="stylesheet" href="{{ asset('css/admin-styles.css') }}">
     </head>
+    
     <body>
-    <div class="container">
+    <div class="applicant-container">
         <h1>Applicants Dashboard</h1>
         @if(session('success'))
             <div class="alert alert-success">
                 {{ session('success') }}
             </div>
         @endif
+     
+        <div class="search-container">
+            <form action="{{ route('admin.applicants') }}" method="GET" class="search-form">
+                <input 
+                    type="text" 
+                    name="search" 
+                    class="search-input" 
+                    placeholder="Name or Position" 
+                    value="{{ request()->input('search') }}">
+                <button type="submit" class="search-button">Search</button>
+            </form>
+        </div>
+
         <table border="1" class="applicants-table">
             <thead>
                 <tr>
